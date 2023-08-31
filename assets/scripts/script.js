@@ -1,65 +1,65 @@
-// let submit = document.getElementById("submit");
-// let displayer = document.getElementById("showme");
+let submit = document.getElementById("submit");
+let displayer = document.getElementById("showme");
 
-// let ans = "";
-// let rem;
+let ans = "";
+let rem;
 
-// //converting to binary
+let messagesToDisplay = [
+  { message: "  Wink", number: 1 },
 
-// function convertdeci() {
-//   let number = document.getElementById("number").value;
-//   while (number != 0) {
-//     rem = number % 2;
-//     number = parseInt(number / 2);
-//     ans += rem;
-//   }
-//   return ans.split("").reverse().join("");
+  { message: "Double Blink", number: 10 },
+
+  { message: "Close Your Eyes", number: 100 },
+
+  { message: "Jump", number: 1000 },
+];
+
+let eachMessage = [];
+
+//converting to binary
+
+function convertdeci() {
+  let number = document.getElementById("number").value;
+  while (number != 0) {
+    rem = number % 2;
+    number = parseInt(number / 2);
+    ans += rem;
+  }
+
+  // return ans
+}
+
+// function view () {
+//   displayer.innerHTML= ans.split('').reverse().join('')
+
 // }
 
+// //reversing convertdeci.
 
-// const messagesToDisplay = [
-//   { message: "wink" },
+function reversingConvert() {
+  for (i = 0; i < ans.length; i++) {
+    if (i < messagesToDisplay.length && ans[i] === "1") {
+      eachMessage.push(messagesToDisplay[i].message);
+    }
+  }
+}
 
-//   { message: "Double Blink"},
+function viewmessages() {
+  displayer.innerHTML = eachMessage.join(",");
+}
 
-//   { message: "Close Your Eyes"},
+function resett() {
+  ans = "";
+}
 
-//   { message: "Jump"},
-// ];
+function resetTwo() {
+  eachMessage = [];
+}
 
-// const eachMessage = [];
-
-
-// // //reversing convertdeci.
-
-// function reversingConvert() {
-//   // convertdeci()
-
-//   let splitt = ans;
-//   let splitting = splitt.split(",");
-//   let splitted = splitting.reverse();
-//   // console.log(splitted)
-
-//   for (i = 0; i < splitted.length; i++) {
-//     if (i < messagesToDisplay.length && splitted[i] === '1') {
-//       eachMessage.push(messagesToDisplay[i].message);
-//       // console.log(eachMessage)
-//      }
-// }
-
-// displayer.innerHTML = eachMessage.join(",");
-
-// }  
-
-
-// function resett() {
-//   ans = "";
-// }
-
-// submit.addEventListener("click", () => {
-//   convertdeci();
-//   reversingConvert();
-//   resett();
-
-//   // displayertwo()
-// });
+submit.addEventListener("click", () => {
+  convertdeci();
+  reversingConvert();
+  viewmessages();
+  resett();
+  resetTwo();
+});

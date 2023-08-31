@@ -1,13 +1,15 @@
-/* * {
+* {
   padding: 0;
   margin: 0;
 }
 
 body {
-  width: 100%;
-  height: 100vh;
+  margin: 0 auto;
+  width: 55%;
+  height: 55%;
   display: flex;
   flex-direction: column;
+  background-color: #181717;
 }
 
 
@@ -20,14 +22,17 @@ p {
   font-family: sans-serif;
   font-weight: 900;
   padding: 10px;
+  color: #fff;
 }
 
 .java {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  width: 45%;
-  height: 45%;
+  gap: 20px;
+  width: 52%;
+  max-width: 52%;
+  max-height: 50%;
+  height: 50%;
   border: 2px solid #d1687a;
   background-color: #f7f6f6;
   border-radius: 8px;
@@ -37,33 +42,51 @@ p {
 form {
   padding: 16px;
   border: none;
-  background-color: #e9647a;
+  background-color: #f5deb3;
+  border: 2px solid #fff;
+}
+
+label {
+  color: #353030;
+  font-family: sans-serif;
+  width: 48%;
 }
 
 #number {
- padding: 16px;
+  padding: 16px;
+  outline: none;
+  border: none;
+  width: 50%;
+  border-radius: 10px;
+  padding: 20px;
 }
 
-#submit{
+#submit {
+  font-family: sans-serif;
   margin: 0 auto;
   display: flex;
+  outline: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100PX;
-  height: 20PX;
+  width: 48%;
   padding: 16PX;
   background-color: #7fffd4;
+  border: 2px solid #7fffd4;
+  font-family: sans-serif;
+  border-radius: 10px;
+  padding: 10px;
 }
+
 
 #showme {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid #000;
-  background-color: #d1687a;
+  border: 2px solid #fff;
+  background-color: #f5deb3;
   height: 126px;
   font-family: sans-serif;
-  font-weight: 800px;
-  font-size: 18px;
-} */
+  font-weight: 600px;
+  font-size: 14px;
+}

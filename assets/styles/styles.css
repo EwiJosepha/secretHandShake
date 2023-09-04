@@ -12,7 +12,6 @@ body {
   background-color: #181717;
 }
 
-
 p {
   margin: 0 auto;
   display: flex;
@@ -41,7 +40,6 @@ p {
 
 form {
   padding: 16px;
-  border: none;
   background-color: #f5deb3;
   border: 2px solid #fff;
 }
@@ -53,7 +51,6 @@ label {
 }
 
 #number {
-  padding: 16px;
   outline: none;
   border: none;
   width: 50%;
@@ -70,14 +67,11 @@ label {
   justify-content: center;
   align-items: center;
   width: 48%;
-  padding: 16PX;
   background-color: #7fffd4;
   border: 2px solid #7fffd4;
-  font-family: sans-serif;
   border-radius: 10px;
   padding: 10px;
 }
-
 
 #showme {
   display: flex;

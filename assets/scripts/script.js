@@ -1,8 +1,8 @@
-let submit = document.getElementById("submit");
-let displayer = document.getElementById("showme");
+let submit = document.getElementById("submit")
+let displayer = document.getElementById("showme")
 
-let ans = "";
-let rem;
+let ans = ""
+let rem
 
 let messagesToDisplay = [
   { message: "  Wink", number: 1 },
@@ -11,19 +11,19 @@ let messagesToDisplay = [
 
   { message: "Close Your Eyes", number: 100 },
 
-  { message: "Jump", number: 1000 },
+  { message: "Jump", number: 1000 }
 ];
 
-let eachMessage = [];
+let eachMessage = []
 
 //converting to binary
 
 function convertdeci() {
-  let number = document.getElementById("number").value;
+  let number = document.getElementById("number").value
   while (number != 0) {
     rem = number % 2;
-    number = parseInt(number / 2);
-    ans += rem;
+    number = parseInt(number / 2)
+    ans += rem
   }
 
   // return ans
@@ -48,26 +48,26 @@ function reversingConvert() {
 }
 
 function viewmessages() {
-  displayer.innerHTML = eachMessage.join(",");
+  displayer.innerHTML = eachMessage.join(",")
 }
 
 function viewreverses() {
-  displayer.innerHTML = eachMessage.reverse().join(",");
+  displayer.innerHTML = eachMessage.reverse().join(",")
 }
 
 function resett() {
-  ans = "";
+  ans = ""
 }
 
 function resetTwo() {
-  eachMessage = [];
+  eachMessage = []
 }
 
 submit.addEventListener("click", () => {
-  convertdeci();
-  reversingConvert();
-  viewmessages();
+  convertdeci()
+  reversingConvert()
+  viewmessages()
   viewreverses()
-  resett();
-  resetTwo();
-});
+  resett()
+  resetTwo()
+})

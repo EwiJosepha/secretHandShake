@@ -39,13 +39,20 @@ function convertdeci() {
 function reversingConvert() {
   for (i = 0; i < ans.length; i++) {
     if (i < messagesToDisplay.length && ans[i] === "1") {
-      eachMessage.push(messagesToDisplay[i].message);
+      eachMessage.push(messagesToDisplay[i].message)
+    }else if(i>messagesToDisplay.length && ans[i]==1){
+      eachMessage.reverse()
+      
     }
   }
 }
 
 function viewmessages() {
   displayer.innerHTML = eachMessage.join(",");
+}
+
+function viewreverses() {
+  displayer.innerHTML = eachMessage.reverse().join(",");
 }
 
 function resett() {
@@ -60,6 +67,7 @@ submit.addEventListener("click", () => {
   convertdeci();
   reversingConvert();
   viewmessages();
+  viewreverses()
   resett();
   resetTwo();
 });

@@ -40,8 +40,7 @@ function reversingConvert () {
   for (let i = 0; i < ans.length; i++) {
     if (i < messagesToDisplay.length && ans[i] === '1') {
       eachMessage.push(messagesToDisplay[i].message)
-   } 
-    else if (i > messagesToDisplay.length && ans[i] === 1) {
+    } else if (i > messagesToDisplay.length && ans[i] === 1) {
       eachMessage.reverse()
     }
   }

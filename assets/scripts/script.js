@@ -21,7 +21,7 @@ let eachMessage = []
 function convertdeci () {
   let number = document.getElementById('number').value
   while (number !== 0) {
-    rem = number % 2;
+    rem = number % 2
     number = parseInt(number / 2)
     ans += rem
   }
@@ -34,32 +34,32 @@ function convertdeci () {
 
 // }
 
-//reversing convertdeci.
+// reversing convertdeci.
 
 function reversingConvert () {
-  for (i = 0; i < ans.length; i++) {
+  for (let i = 0; i < ans.length; i++) {
     if (i < messagesToDisplay.length && ans[i] === '1') {
       eachMessage.push(messagesToDisplay[i].message)
-    }else if(i>messagesToDisplay.length && ans[i]===1){
+    } 
+    else if (i > messagesToDisplay.length && ans[i] === 1){
       eachMessage.reverse()
-      
     }
   }
 }
 
-function viewmessages() {
+function viewmessages () {
   displayer.innerHTML = eachMessage.join(',')
 }
 
-function viewreverses() {
+function viewreverses () {
   displayer.innerHTML = eachMessage.reverse().join(',')
 }
 
-function resett() {
+function resett () {
   ans = ''
 }
 
-function resetTwo() {
+function resetTwo () {
   eachMessage = []
 }
 

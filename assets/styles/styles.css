@@ -40,12 +40,12 @@ p {
 
 form {
   padding: 16px;
-  background-color: #f9dca6;
+  background-color: #fff1d8;
   border: 2px solid #fff;
 }
 
 label {
-  color: #353030;
+  color: #433e3e;
   font-family: sans-serif;
   width: 48%;
 }
@@ -78,7 +78,7 @@ label {
   justify-content: center;
   align-items: center;
   border: 2px solid #fff;
-  background-color: #f5deb3;
+  background-color: #f8f0e1;
   height: 126px;
   font-family: sans-serif;
   font-weight: 600px;

@@ -25,16 +25,7 @@ function convertdeci () {
     number = parseInt(number / 2)
     ans += rem
   }
-
-// return ans
 }
-
-// function view () {
-//   displayer.innerHTML= ans.split('').reverse().join('')
-
-// }
-
-// reversing convertdeci.
 
 function reversingConvert () {
   for (let i = 0; i < ans.length; i++) {
